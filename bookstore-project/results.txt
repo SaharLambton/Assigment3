@@ -1,0 +1,11 @@
+ PASS  dist/tests/returnBook.test.js
+ PASS  dist/tests/borrowBook.test.js
+ PASS  dist/tests/addBook.test.js                                                                                                                                             
+ PASS  src/tests/addBook.test.ts (5.655 s)                                                                                                                                    
+ PASS  src/tests/borrowBook.test.ts (5.699 s)
+ PASS  src/tests/returnBook.test.ts (5.779 s)
+
+Test Suites: 6 passed, 6 total
+Tests:       6 passed, 6 total
+Snapshots:   0 total
+Time:        6.76 s, estimated 8 s
