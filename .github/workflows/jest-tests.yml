@@ -1,4 +1,4 @@
-name: jest-tests
+name: Jest Tests
 
 on:
   push:
@@ -16,15 +16,5 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: '14'
-
     - run: npm ci
     - run: npm test
-
-    - name: Notify on failure
-      if: failure()
-      run: echo "Tests failed!"
-
-    - name: Deploy to production
-      if: success()
-      run: |
-        echo "Tests passed! Deploying to production..."
