@@ -13,8 +13,9 @@ describe('Bookstore - Return Book', () => {
 
     const result = bookstore.returnBook(1, 1);
 
-    expect(result).toBe('Alice successfully returned "1984".');
-    expect(book.available).toBe(true);
-    expect(customer.borrowedBooks).not.toContain(1);
-  });
+  // Expectativa modificada para que falle
+  expect(result).toBe('Alice failed to return "1984".'); // Resultado incorrecto intencionalmente
+  expect(book.available).toBe(false); // Esta línea también hará que falle la prueba
+  expect(customer.borrowedBooks).toContain(1); // Otra línea modificada para fallar
+});
 });
