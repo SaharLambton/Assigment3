@@ -19,7 +19,7 @@ jobs:
 
     # Cache node modules to speed up workflows
     - name: Cache node modules
-      uses: actions/cache@v3
+      uses: actions/cache@v2
       env:
         cache-name: cache-node-modules
       with:
